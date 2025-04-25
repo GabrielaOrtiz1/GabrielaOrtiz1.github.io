@@ -1,5 +1,0 @@
-index.html;
-sobre.html;
-projetos.html;
-contato.html;
-styles.css.
