@@ -1,124 +1,170 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre - Meu Currículo Online</title>
-  <style>
-    /* Estilos gerais */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Meu Currículo Online</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+        }
 
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 10px 0;
-      text-align: center;
-    }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
 
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-    }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
-    nav ul li {
-      margin: 0 15px;
-    }
+            nav ul li {
+                margin: 0 15px;
+            }
 
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
+                nav ul li a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
 
-    main {
-      padding: 20px;
-      text-align: center;
-    }
+        main {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
 
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 10px 0;
-      width: 100%;
-      position: relative;
-      bottom: 0;
-    }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
 
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 20px;
-    }
+        .item {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            text-align: justify;
+        }
 
-    .item {
-      background-color: #f0f0f0;
-      padding: 20px;
-      margin: 10px;
-      flex: 1 1 300px;
-      text-align: center;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
 
-    .item img {
-      width: 150px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-    }
+            .item img {
+                width: 150px;
+                border-radius: 50%;
+                margin-bottom: 20px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
-    h1 {
-      margin-bottom: 10px;
-    }
 
-    p {
-      font-size: 1.1rem;
-      color: #555;
-    }
-  </style>
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+            ul li {
+                margin-bottom: 5px;
+            }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        @media (max-width: 600px) {
+            .item {
+                padding: 15px;
+                margin: 5px;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            nav ul li {
+                margin: 5px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-       <li><a href="projetos.html">Experiências</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="container">
-      <div class="item">
-        <h1>Sobre Mim</h1>
-        <!-- Certifique-se de que o caminho para a imagem está correto -->
-        <img src="img/gabriela.jpg" alt="Foto Gabriela">
-        <p>
-          Olá, sou <strong>Gabriela Ortiz</strong>, uma desenvolvedora apaixonada por tecnologia e inovação. Criei esta página para compartilhar um pouco sobre minha jornada no mundo da programação e desenvolvimento web. Sou formada em <strong>Análise e Desenvolvimento de Sistemas</strong> gostaria de demonstrar minha experiencia com <strong>C#</strong> e <strong>HTML</strong>.
-        </p>
-        
-        <p>
-          Atualmente, trabalho com suporte na área de <strong>redes e infraestrutura</strong>, mas a minha verdadeira paixão está na área de <strong>análise de dados</strong> e <strong>desenvolvimento de sistemas</strong>. Estou em busca constante de aprimorar minhas habilidades e expandir meus conhecimentos em programação, criando soluções inovadoras para desafios complexos.
-        </p>
-        
-        <p>
-          Meu objetivo com esta página é não apenas mostrar meu trabalho, mas também refletir minha evolução profissional. Estou sempre em busca de novos projetos, desafios e oportunidades para aprender mais e contribuir para o crescimento da tecnologia.
-        </p>
-        
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Gabriela Ortiz. Todos os direitos reservados.</p>
-  </footer>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html">Experiências</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <div class="item">
+                <h1>Sobre Mim</h1>
+                <img src="img/gabriela.jpg" alt="Foto Gabriela">
+                <p>
+                    Olá, me chamo <strong>Gabriela Ortiz</strong>, sou apaixonada por tecnologia, inovação e pelo impacto que soluções digitais podem gerar em diferentes contextos. Desde o início da minha trajetória profissional, venho explorando diversas áreas da <strong>Tecnologia da Informação</strong>, sempre com foco em aprendizado contínuo e evolução.
+                </p>
+                <p>
+                    Sou formada em <strong>Análise e Desenvolvimento de Sistemas</strong> e atualmente curso <strong>Ciência de Dados</strong>, buscando aprofundar meus conhecimentos em estatística, machine learning e visualização de dados.
+                </p>
+                <p>
+                    Atuo como <strong>Analista de Redes e Infraestrutura</strong>, com experiências que vão desde ambientes <strong>corporativos</strong> até o <strong>chão de fábrica</strong>, o que me proporcionou uma visão ampla e prática sobre os desafios e soluções em TI.
+                </p>
+                <p>
+                    Ao longo da minha jornada, conquistei certificações relevantes, como:
+                    <ul>
+                        <li>Oracle Cloud Infrastructure Foundations Associate</li>
+                        <li>Microsoft Power BI para Business Intelligence e Data Science</li>
+                        <li>Fundamentos de metodologias ágeis com foco em Scrum</li>
+                    </ul>
+                </p>
+                <p>
+                    Este espaço foi criado para compartilhar minha trajetória, meus projetos e abrir portas para novas oportunidades. Estou sempre em busca de desafios que me permitam crescer profissionalmente e contribuir com soluções tecnológicas eficientes e inovadoras.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Gabriela Ortiz. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

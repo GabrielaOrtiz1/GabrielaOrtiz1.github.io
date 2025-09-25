@@ -1,103 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Currículo Online</title>
-  <style>
-    /* Estilos gerais */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo Online</title>
+    <style>
+        /* Estilos gerais */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+        }
 
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 10px 0;
-      text-align: center;
-    }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
 
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-    }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
 
-    nav ul li {
-      margin: 0 15px;
-    }
+            nav ul li {
+                margin: 0 15px;
+            }
 
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
+                nav ul li a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
 
-    main {
-      padding: 20px;
-      text-align: center;
-    }
+        main {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
 
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 10px 0;
-      width: 100%;
-      position: relative;
-      bottom: 0;
-    }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
+        .item {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            text-align: justify;
+        }
 
-    .item {
-      background-color: #f0f0f0;
-      padding: 20px;
-      margin: 10px;
-      flex: 1 1 300px;
-      text-align: center;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-  </style>
+        h1 {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-       <li><a href="projetos.html">Experiências</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="home" class="container">
-      <div class="item">
-        <h1>Bem-vindo ao Meu Currículo Online</h1>
-        <p>
-          Olá, sou <strong>Gabriela Ortiz</strong>, uma profissional apaixonada pela <strong>Tecnologia da Informação</strong> e suas diversas áreas de atuação. Através deste site, quero compartilhar com você meu conhecimento e minha experiência em <strong>desenvolvimento web</strong>, além de outras habilidades que adquiri ao longo da minha carreira.
-        </p>
-        
-        <p>
-          Para conhecer mais sobre minha trajetória, minhas experiências e os projetos que venho desenvolvendo, não deixe de explorar as páginas disponíveis no menu no topo da página. Fique à vontade para navegar e entrar em contato!
-        </p>
-        
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2024 Gabriela Ortiz. Todos os direitos reservados.</p>
-  </footer>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="projetos.html">Experiências</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="container">
+            <div class="item">
+                <h1>Bem-vindo ao meu Currículo Online</h1>
+                <p>
+                    Olá, me chamo <strong>Gabriela Ortiz</strong>, sou uma profissional apaixonada pela <strong>Tecnologia da Informação</strong> e suas diversas áreas de atuação. Através deste site, quero compartilhar com você as experiências que adquiri ao longo da minha carreira.
+                </p>
+                <p>
+                    Para conhecer mais sobre minha trajetória, minhas experiências e os projetos que venho desenvolvendo, não deixe de explorar as páginas disponíveis no menu no topo da página. Fique à vontade para navegar e entrar em contato!
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Gabriela Ortiz. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
