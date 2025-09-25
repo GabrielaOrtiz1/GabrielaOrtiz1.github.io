@@ -43,11 +43,6 @@
 
         main {
             flex: 1;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
         }
 
         .container {
@@ -77,6 +72,21 @@
             text-align: center;
             padding: 10px 0;
         }
+
+        @media (max-width: 600px) {
+            .item {
+                padding: 15px;
+                margin: 5px;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            nav ul li {
+                margin: 5px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -88,6 +98,7 @@
                 <li><a href="projetos.html">Experiências</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
+
         </nav>
     </header>
     <main>
