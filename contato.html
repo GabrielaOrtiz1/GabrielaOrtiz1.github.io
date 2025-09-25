@@ -30,17 +30,26 @@
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
+          gap: 15px; /* espaçamento entre os botões */
       }
 
-          nav ul li {
-              margin: 0 15px;
+          nav ul li a {
+              background-color: #555;
+              color: #fff;
+              padding: 10px 20px;
+              border-radius: 25px;
+              text-decoration: none;
+              font-weight: bold;
+              transition: background-color 0.3s ease, transform 0.2s ease;
+              display: inline-block;
           }
 
-              nav ul li a {
-                  color: #fff;
-                  text-decoration: none;
-                  font-weight: bold;
+              nav ul li a:hover {
+                  background-color: #9b61facb;
+                  transform: scale(1.05);
               }
+
+
 
       main {
           flex: 1;
