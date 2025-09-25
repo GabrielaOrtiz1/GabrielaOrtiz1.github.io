@@ -49,6 +49,25 @@
                   transform: scale(1.05);
               }
 
+      /* Responsividade para telas pequenas */
+      @media (max-width: 600px) {
+          nav ul {
+              flex-direction: row; /* mantém lado a lado */
+              flex-wrap: wrap;
+              justify-content: center;
+              gap: 10px;
+          }
+
+              nav ul li a {
+                  padding: 8px 16px;
+                  font-size: 14px;
+                  border-radius: 20px;
+                  min-width: 100px;
+                  text-align: center;
+              }
+      }
+
+
 
 
       main {
